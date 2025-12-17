@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planejamento Financeiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0b0b0b;
+      --gold: #d4af37;
+      --green: #1db954;
+      --text-light: #eaeaea;
+      --text-muted: #9a9a9a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--gold);
+    }
+
+    .btn-header {
+      padding: 10px 22px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, var(--gold), var(--green));
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-header:hover {
+      transform: scale(1.05);
+    }
+
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      color: var(--gold);
+    }
+
+    .hero-text p {
+      color: var(--text-muted);
+      margin-bottom: 35px;
+      font-size: 1.05rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn-primary {
+      padding: 14px 34px;
+      border-radius: 40px;
+      background: linear-gradient(135deg, var(--gold), var(--green));
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      padding: 14px 34px;
+      border-radius: 40px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero-image {
+      background: radial-gradient(circle at top, rgba(212,175,55,0.25), transparent 60%);
+      border-radius: 24px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mockup {
+      width: 100%;
+      max-width: 420px;
+      background: #111;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    }
+
+    .mockup h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .mockup p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Finança Simples</div>
+    <a href="comprar.html" class="btn-header">Comprar agora</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Controle total do seu <span>dinheiro</span></h1>
+      <p>Uma planilha de planejamento financeiro simples, elegante e eficiente para organizar seus ganhos, gastos e metas mensais.</p>
+      <div class="hero-buttons">
+        <a href="comprar.html" class="btn-primary">Quero organizar minhas finanças</a>
+        <a href="#preview" class="btn-secondary">Ver como funciona</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="mockup">
+        <h3>Planejamento Mensal</h3>
+        <p>• Controle de gastos fixos e variáveis<br>
+           • Metas financeiras<br>
+           • Visual limpo e automático</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 • Planejamento Financeiro • Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
